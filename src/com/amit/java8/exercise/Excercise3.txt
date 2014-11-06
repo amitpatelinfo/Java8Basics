@@ -1,0 +1,11 @@
+Which of the below lambda expressions are valid Function<Long, Long> implementations?
+
+a) x -> x+ 1;
+Ans : Right answer
+
+b) (x, y) -> x + 1;
+Ans : Wrong type
+
+c) x -> x == 1
+Ans : right type but its boolean.
+

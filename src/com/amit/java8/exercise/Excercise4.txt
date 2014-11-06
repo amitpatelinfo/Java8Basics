@@ -1,0 +1,20 @@
+Please find below some examples of passing lambda expressions to functions.
+Can the java compiler infer the types; in other words will the following code compile?
+
+(a) Runnable run1 = () -> System.out.println(“Hello Functional World”);
+
+ Ans : Yes it should compile & run.
+
+(b) Would check(x -> x > 5 ) be inferred given the following overloads for check?
+Interface IntPredicate {
+	Boolean test(Integer value);
+}
+
+boolean check(Predicate<Integer> predicate) {
+	return true;
+}
+
+Boolean check(IntPredicate predicate) {
+	Return true;
+}
+
